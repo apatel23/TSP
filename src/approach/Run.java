@@ -13,8 +13,7 @@ import java.util.Scanner;
 
 
 public class Run {
-	private NearestNeighbor near;
-	private Optimal opt;
+
 	private Run run;
 	static ArrayList<Point> points;
 	static ArrayList<Point> current;
@@ -24,8 +23,6 @@ public class Run {
 	private static int numCoordinates = 0;
 	
 	Run() {
-		near = new NearestNeighbor();
-		opt = new Optimal();
 		run = new Run();
 		current = new ArrayList<Point>();
 	}
@@ -143,8 +140,8 @@ public class Run {
 	    } else {
 	        for (int i = 0; i < n; ++i) {
 	            List<Point> newPrefix = new ArrayList<Point>();
-	            System.out.println((prefix));
-	            System.out.println(nums.get(i));
+	            //System.out.println((prefix));
+	            //System.out.println(nums.get(i));
 	            newPrefix.addAll(prefix);
 	            newPrefix.add(nums.get(i));
 	            List<Point> numsLeft = new ArrayList<Point>();
